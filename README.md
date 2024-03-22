@@ -16,6 +16,80 @@ DocuMergeTheory is an innovative project that intersects the rich field of textu
 - **Pull Requests for Scholarly Interpretation**: Use pull requests as a means for scholars to submit their interpretations, annotations, or corrections of the text, accompanied by detailed explanations and scholarly debate.
 - **Diff for Comparative Analysis**: Leverage Git's diff tool to visually compare changes between branches, highlighting textual variations and facilitating in-depth analysis.
 
+
+### Repository Structure
+
+```
+/DocuMergeTheory
+    /texts
+        /masoretic
+            genesis.heb.txt
+            exodus.heb.txt
+            leviticus.heb.txt
+            numbers.heb.txt
+            deuteronomy.heb.txt
+        /samaritan
+            genesis.smr.txt
+            exodus.smr.txt
+            leviticus.smr.txt
+            numbers.smr.txt
+            deuteronomy.smr.txt
+        /english
+            /web
+                genesis.en.txt
+                exodus.en.txt
+                leviticus.en.txt
+                numbers.en.txt
+                deuteronomy.en.txt
+    /resources
+        /fonts
+            README.md
+        /scripts
+            README.md
+            example_script.py
+        /tools
+            README.md
+            tool_instructions.md
+    /documentation
+        README.md
+        CONTRIBUTING.md
+        LICENSE.md
+    /vorlage
+        /genesis
+            genesis.en.txt
+            genesis.heb.txt
+        /exodus
+            exodus.en.txt
+            exodus.heb.txt
+        /leviticus
+            leviticus.en.txt
+            leviticus.heb.txt
+        /numbers
+            numbers.en.txt
+            numbers.heb.txt
+        /deuteronomy
+            deuteronomy.en.txt
+            deuteronomy.heb.txt
+```
+
+### Directory Descriptions
+
+- **/texts**: Contains the main textual traditions and translations. Each subdirectory (e.g., `/masoretic`, `/samaritan`, `/english`) holds files for the books of the Pentateuch in the respective tradition or translation. The naming convention (`[book].[lang].txt`) ensures clarity and ease of access.
+    - **/masoretic**: For the Hebrew Masoretic Text.
+    - **/samaritan**: For the Samaritan Pentateuch text.
+    - **/english/web**: For the World English Bible translation, with potential to expand to other translations.
+
+- **/resources**: A directory for supplementary materials that support the textual work, such as fonts for viewing and editing texts, scripts for processing or analyzing texts, and tools with instructions for use.
+    - **/fonts**: Information and possibly links to download fonts suitable for viewing ancient scripts.
+    - **/scripts**: Custom scripts for tasks like converting text formats, analyzing textual variants, etc.
+    - **/tools**: Documentation and guides for tools used in textual analysis and repository management.
+
+- **/documentation**: Essential documents for guiding contributors and users of the repository. This includes a general README, contributing guidelines (CONTRIBUTING.md), and licensing information (LICENSE.md).
+
+- **/vorlage**: This directory mirrors the structure of `/texts` but is specifically for the foundational texts being used in the DocuMerge project, organized by book. It serves as a workspace for developing and discussing the base texts before they are considered part of the main textual tradition folders.
+
+
+
 ## Getting Started
 
 ### Prerequisites
